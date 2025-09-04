@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Streamlit / credenciales
+.streamlit/
+.env
+.env.*
+
+# Cache de imágenes
+imgs/*
+
+# ¡dejá un marcador para versionar la carpeta!
+!imgs/.gitkeep
