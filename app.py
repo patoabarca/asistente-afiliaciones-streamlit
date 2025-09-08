@@ -295,7 +295,7 @@ with colR:
     tema = (st.session_state.last_meta or {}).get("tema") or "afiliaciones IOMA"
     try:
         path_256 = get_or_create_image_for_theme(tema, size_generate="1024x1024", size_display=(256,256))
-        st.image(str(path_256), caption=f"Imagen: {tema}", use_column_width=True)
+        st.image(str(path_256), caption=f"Imagen: {tema}", width=256)
     except Exception as e:
         st.info(f"No se pudo mostrar la imagen ({e}).")
 
